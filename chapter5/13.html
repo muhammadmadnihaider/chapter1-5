@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var snack = prompt("favorite snack");
+      var currentAge = Number(prompt("current age"));
+      var maxAge = Number(prompt("estimated max age"));
+      var dailyAmount = Number(prompt("daily amount you consume"));
+      document.write(`
+    
+        <h1>The Lifetime Supply Calculator</h1>
+        <br>
+        Favorite Snack: ${snack} <br>
+        Current Age : ${currentAge} <br>
+        Estimated Maximum Age: ${maxAge} <br>
+        Amount of snacks per day: ${dailyAmount}<br>
+        You will need ${(maxAge - currentAge) *
+          dailyAmount} ${snack} to last you until the ripe old age of 65
+    `);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var item1 = Number(prompt("price of item 1"));
+      var item2 = Number(prompt("price of item 2"));
+      var quantity1 = Number(prompt("quantity of item 1"));
+      var quantity2 = Number(prompt("quantity of item 2"));
+
+      var shippingCharges = Number(prompt("shipping charges"));
+
+      document.write(`<h1>Shopping Cart</h1> <br>
+    Price of item 1 is ${item1} <br>
+    Quantity of item 1 is ${quantity1} <br>
+    Price of item 2 is ${item2} <br>
+    Quantity of item 2 is ${quantity2} <br>
+    Shipping Charges ${shippingCharges} <br>
+    Total cost of your order is ${item1 * quantity1 +
+      item2 * quantity2 +
+      shippingCharges}
+    `);
+    </script>
+  </body>
+</html>
